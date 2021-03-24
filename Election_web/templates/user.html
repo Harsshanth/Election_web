@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Voting Online</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src ="/js/auth.js"></script>
+</head>
+<body>
+	<img class="wave" src="img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="img/quote.jpg">
+		</div>
+		
+		<div class="login-content">
+			<form action="index.html">
+				<img src="img/avatar.svg">
+				<h2 class="title">MY VOTE</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		
+           		   		<input placeholder="Aadhaar Number" type="text" class="input" id="aadhaar">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		    	
+           		    	<input placeholder="Voter Id" type="text" class="input" id="voterId">
+            	   </div>
+				</div>
+				<div class="input-div pass">
+					<div class="i"> 
+						 <i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+						 
+						 <input placeholder="Voter Code" type="text" class="input" id="voterCode">
+				 </div>
+			  </div>
+				<input type="submit" class="btn" value="Continue" onclick="return validate_user()">
+				<div >
+					<img src="img/qr.jpeg">
+				</div>
+				
+            </form>
+        </div>
+	</div>
+	
+
+    
+</body>
+</html>

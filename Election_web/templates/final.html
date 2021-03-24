@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Election</title>
+        <link rel="stylesheet" type="text/css" href="css/style2.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src ="/js/login.js"></script>
+    </head>
+    <body>
+        <img class="wave" src="img/wave.png">
+        <div class="timer">Time left = <span id="timer"></span></div>
+  <style>
+  .timer{
+    background-color:#009879;
+    color:#EFD0CA;
+    font-size:20px;
+    text-align:center;
+  }
+</style>
+
+<script>
+ 
+    document.getElementById('timer').innerHTML =
+  000 + ":" + 10;
+startTimer();
+
+function startTimer() {
+  var presentTime = document.getElementById('timer').innerHTML;
+  var timeArray = presentTime.split(/[:]+/);
+  var m = timeArray[0];
+  var s = checkSecond((timeArray[1] - 1));
+  if(s==59){m=m-1}
+  if(m<0)
+  {alert('New Vote')
+  window.location='user'}
+  
+  document.getElementById('timer').innerHTML =
+    m + ":" + s;
+  console.log(m)
+  setTimeout(startTimer, 1000);
+}
+
+function checkSecond(sec) {
+  if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+  if (sec < 0) {sec = "59"};
+  return sec;
+}
+</script>
+	<div class="container">
+		<div class="img">
+			<img src="img/bg2.svg">
+        </div>
+        <div class="detail-content">
+         <form>
+            <img src="img/avatar.svg">
+            <h2>Your Voting is successfully Counted</h2>
+         </form>
+
+        </div>
+
+
+
+    </body>
+</html>
